@@ -1,7 +1,11 @@
 import React from 'react';
 
-const affirmation = () => {
-  return <div></div>;
+const Affirmation = () => {
+  return (
+    <div>
+      <h1>History, this is the affirmation page</h1>
+    </div>
+  );
 };
 
-export default affirmation;
+export default Affirmation;
