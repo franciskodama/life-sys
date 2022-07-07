@@ -1,12 +1,11 @@
-import React, { Children } from 'react';
+import * as React from 'react';
 
-const Page = ({ children }) => {
+export interface Props {}
+
+export function Page(props: Props) {
   return (
     <div>
       <h1>Page Component</h1>
-      {children}
     </div>
   );
-};
-
-export default Page;
+}
