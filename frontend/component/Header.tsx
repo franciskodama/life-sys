@@ -1,20 +1,54 @@
 import Link from 'next/link';
 import * as React from 'react';
 import { Nav } from './Nav';
+import styled from 'styled-components';
+
+const Logo = styled.h1`
+  font-size: 2rem;
+  margin-left: 0.5em;
+  background: black;
+  position: relative;
+  z-index: 2;
+  transform: skew(-7deg);
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+  }
+`;
+
+const HeaderStyles = styled.header`
+  .bar {
+    border-bottom: 1px solid var(--black, black);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid var(--black, black);
+  }
+`;
 
 export interface Props {}
 
 export function Header(props: Props) {
   return (
-    <header>
+    <HeaderStyles>
       <div className='bar'>
-        <Link href='/'>Life Sys</Link>
+        <Logo>
+          <Link href='/'>Life Sys</Link>
+        </Logo>
       </div>
       <div className='sub-bar'>
         <p>Search</p>
       </div>
       <p>I am the header</p>
       <Nav />
-    </header>
+    </HeaderStyles>
   );
 }
