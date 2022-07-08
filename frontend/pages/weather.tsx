@@ -1,8 +1,11 @@
 import React from 'react';
 
 function Weather() {
-  <h1>History, this is the weather page</h1>;
-  return <div></div>;
+  return (
+    <div>
+      <h1>Weather page</h1>
+    </div>
+  );
 }
 
 export default Weather;

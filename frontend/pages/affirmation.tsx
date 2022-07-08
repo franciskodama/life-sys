@@ -3,7 +3,7 @@ import React from 'react';
 const Affirmation = () => {
   return (
     <div>
-      <h1>History, this is the affirmation page</h1>
+      <h1>Affirmation page</h1>
     </div>
   );
 };
